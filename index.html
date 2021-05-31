@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="my_logo_2.png" type="image/x-icon" />
+    <!-- For fontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <!-- For Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR SECTION -->
+
+    <nav class="navbar">
+      <div class="navbar__container">
+        <img src="my_logo_2.png" id="navbar__logo" alt="" />
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">Skills</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page"
+              >Projects</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Contact us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="section hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">
+          Hii, I'm Samrat <br />
+          <span>Frontend Developer</span>
+        </h1>
+        <p class="hero__description">
+          Through constant learning and creation, I produce aesthetic <br />
+          webpages to the highest possible standard. I'm largely framwork <br />
+          agnostic but technologies I love to learn right now is React JS
+        </p>
+        <button class="main__btn"><a href="#about">Explore</a></button>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="section main" id="about">
+      <div class="main__container">
+        <div data-aos="fade-right" class="main__content">
+          <h1>Skills</h1>
+          <div class="skill_1">Development</div>
+
+          <p class="dev_skill">
+            HTML &nbsp &nbsp CSS &nbsp &nbsp JavaScript &nbsp &nbsp Git
+          </p>
+          <br />
+          <p class="dev_skill">
+            React JS &nbsp &nbsp Firebase &nbsp &nbsp Bootstrap
+          </p>
+        </div>
+        <div data-aos="fade-right" class="design">
+          <div class="skill_1">Design</div>
+          <p class="design_skill">
+            Figma &nbsp &nbsp Adobe XD &nbsp &nbsp Photoshop
+          </p>
+        </div>
+        <div data-aos="fade-right" class="design">
+          <div class="skill_1">Language</div>
+          <p class="design_skill">C++ &nbsp &nbsp JAVA</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services section -->
+
+    <div class="section services" id="services">
+      <h1>My Projects</h1>
+      <div class="services__wrapper">
+        <div data-aos="zoom-in" class="card services__card">
+          <div class="imgBx">
+            <img class="section_img" src="./Images/Project_1.png" alt="" />
+          </div>
+          <div class="details">
+            <h2>Music Webapp <br /><span>A responsive Music app</span></h2>
+          </div>
+        </div>
+
+        <div data-aos="zoom-in" class="card services__card">
+          <div class="imgBx">
+            <img class="section_img" src="./Images/project2.2.png" alt="" />
+          </div>
+          <div class="details">
+            <h2>
+              Word Typing WebApp <br /><span
+                >It uses an word API to randomly generate some words</span
+              >
+            </h2>
+          </div>
+        </div>
+
+        <div data-aos="zoom-in" class="card services__card">
+          <div class="imgBx">
+            <img class="section_img" src="./Images/project_3.1.png" alt="" />
+          </div>
+          <div class="details">
+            <h2>
+              Note Taking Website<br /><span
+                >It uses Bootstrap and It use browser's localstore to store the
+                given notes</span
+              >
+            </h2>
+          </div>
+        </div>
+
+        <div data-aos="zoom-in" class="card services__card">
+          <div class="imgBx">
+            <img class="section_img" src="./Images/project_4.png" alt="" />
+          </div>
+          <div class="details">
+            <h2>
+              Google Maps Clone<br /><span
+                >It uses mapbox API to view the map</span
+              >
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature section -->
+
+    <div class="section main" id="sign-up">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Get in touch with me</h1>
+          <h2>Drop a messege</h2>
+          <p class="feature_p">
+            To grow your business online or to know anything about this
+            development
+          </p>
+        </div>
+
+        <div class="form" id="contact">
+          <form action="https://formspree.io/f/xleabwjo" method="POST">
+            <div>
+              <label for="contactName">
+                Name <span aria-required="true">*</span>
+              </label>
+              <input
+                type="text"
+                size="35"
+                placeholder="enter your name"
+                id="contactName"
+                name="name"
+              />
+            </div>
+            <div>
+              <label for="contactEmail">
+                Email <span class="required">*</span>
+              </label>
+              <input
+                type="email"
+                defaultValue=""
+                placeholder="enter your email"
+                size="35"
+                id="contactEmail"
+                name="email"
+              />
+            </div>
+
+            <div>
+              <label for="contactMessage">
+                Message <span class="required">*</span>
+              </label>
+              <textarea
+                placeholder="enter messege"
+                cols="20"
+                rows="13"
+                name="messege"
+              ></textarea>
+            </div>
+            <div>
+              <button type="submit" class="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="section footer__container">
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="social__icons">
+            <a
+              href="https://www.facebook.com/samrat.borah.165"
+              class="social__icon--link"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/___sam__rat___/"
+              class="social__icon--link"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/samrat-borah-b765251a0/"
+              class="social__icon--link"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/samrat222"
+              class="social__icon--link"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <p class="website__rights">
+            Copyright © samrat.com 2021. All rights reserved
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
