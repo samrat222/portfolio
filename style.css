@@ -192,10 +192,6 @@ body {
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  #navbar__logo {
-    height: 1.5rem;
-    width: 3rem;
-  }
 }
 
 /* Hero section */
